@@ -29,35 +29,44 @@ nav a {
 }
 
 .hero {
-    text-align: center;
-    padding: 120px 20px;
+  position: relative;
+  min-height: 100vh;
+  background-image: url("assets/boutique.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.hero h1 {
-    font-size: 48px;
+/* Overlay sombre */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
 }
 
-.hero p {
-    margin: 20px 0;
-    font-size: 18px;
+/* Contenu au-dessus de l’image */
+.hero-content {
+  position: relative;
+  color: #fff;
+  max-width: 800px;
+  padding: 20px;
 }
 
-.buttons {
-    margin-top: 30px;
+/* Boutons dans le hero */
+.hero .btn {
+  background: #fff;
+  color: #000;
 }
 
-.btn {
-    padding: 12px 25px;
-    background: #111;
-    color: #fff;
-    text-decoration: none;
-    margin: 5px;
-}
-
-.btn-dark {
-    background: transparent;
-    border: 1px solid #111;
-    color: #111;
+.hero .btn-dark {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .section {
