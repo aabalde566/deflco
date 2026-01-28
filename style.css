@@ -171,9 +171,9 @@ footer {
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .logo {
-    max-width: 150px;
+    max-width: 140px;
   }
 
   section h2 {
@@ -191,5 +191,10 @@ footer {
   width: 100%;
 }
 
+.logo {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+}
 
 
