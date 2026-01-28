@@ -8,8 +8,10 @@
 
 /* BODY */
 body {
+  margin: 0;
   background: #f7f4ef;
   color: #111;
+  overflow-x: hidden; /* empêche le débordement horizontal */
 }
 
 /* HEADER */
@@ -34,6 +36,8 @@ header p {
 section {
   padding: 60px 20px;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 section h2 {
@@ -154,5 +158,38 @@ footer {
   }
 
 }
+
+/* TABLETTE */
+@media (max-width: 1024px) {
+  .logo {
+    max-width: 180px;
+  }
+
+  section {
+    padding: 50px 20px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .logo {
+    max-width: 150px;
+  }
+
+  section h2 {
+    font-size: 26px;
+  }
+}
+
+
+/* Conteneur global pour éviter le débordement */
+section,
+header,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 
 
