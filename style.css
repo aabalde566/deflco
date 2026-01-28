@@ -32,7 +32,7 @@ header p {
 
 /* SECTIONS */
 section {
-  padding: 60px 40px;
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -45,7 +45,9 @@ section h2 {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
+  gap: 25px;
+max-width:1200px;
+margin:40px auto;
 }
 
 /* CARDS */
@@ -63,8 +65,8 @@ section h2 {
 
 .card img {
   width: 100%;
-  height: 260px;
-  object-fit: cover;
+  height: auto;
+  border-radius:10px;
 }
 
 .card h3 {
@@ -123,5 +125,34 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+
+  .logo {
+    height: 55px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+}
 
 
